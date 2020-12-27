@@ -48,7 +48,7 @@ app.on('ready', ()=>{
     }).then(result => {
       if(!result.canceled){
         event.sender.send('selected-file', result.filePaths)
-      }
+      } 
     })
   })
   ipcMain.on('delete-file', (event, id) => {

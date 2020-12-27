@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>本地播放器</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <div class="container">
         <h1>我的播放器</h1>
@@ -15,9 +18,12 @@
         </button>
         <div id="tracksList" class="mt-4"></div>
     </div>
-    <div class="fixed-bottom container">
+    <div class="fixed-bottom container bg-white pb-4">
         <hr>
         <div class="row my-2" id="player-status"></div>
+        <div class="progress">
+            <div class="progress-bar bg-success" id="play-progress" role="progressbar" style="width: 0%" >0%</div>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/5266e8e2f4.js" crossorigin="anonymous"></script>
 
@@ -25,4 +31,5 @@
         require('./index.js')
     </script>
 </body>
+
 </html>

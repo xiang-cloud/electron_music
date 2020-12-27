@@ -29,7 +29,7 @@ class DataSource extends Store {
         return this.saveTracks()
     }
     deleteTracks(deleteId){
-        this.tracks = this.tracks.filter(item=>!item.id === deleteId)
+        this.tracks = this.tracks.filter(item=>!(item.id === deleteId))
         return this.saveTracks()
     }
 
